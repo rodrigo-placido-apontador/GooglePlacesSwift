@@ -9,6 +9,7 @@
 import Foundation
 
 class API {
+    
     let kGOOGLE_API_KEY = "AIzaSyAKd1IlCzCkI85rtPu-r4onhHbozsV0DNE"
     let kURL_GOOGLE = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     

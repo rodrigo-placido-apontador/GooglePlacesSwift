@@ -9,5 +9,7 @@
 import UIKit
 
 class PlacesTableViewCell: UITableViewCell {
+   
     @IBOutlet weak var lblPlaceName: UILabel!
+    
 }

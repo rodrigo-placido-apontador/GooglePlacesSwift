@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 
 class GoogleAPIController {
+   
     let api = API()
     
     func getGooglePlaces(completionHandler: @escaping (NSMutableArray?, Int?) -> ()) -> () {

@@ -10,6 +10,7 @@ import Foundation
 import Unbox
 
 class Place: Unboxable{
+  
     var name: String?
     
     required init(unboxer: Unboxer) {
