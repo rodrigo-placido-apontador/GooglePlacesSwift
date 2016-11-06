@@ -36,6 +36,8 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
         // Dispose of any resources that can be recreated.
     }
     
+    /* Place methods */
+    
     func reloadPlaces() {
         self.refreshControl?.endRefreshing()
         self.placesArray?.removeAllObjects()
@@ -68,11 +70,15 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
         }
     }
     
+    /* LocationManager methods */
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let coordinate:CLLocationCoordinate2D = manager.location!.coordinate
         self.loadPlaces(lat: coordinate.latitude, lon: coordinate.longitude)
         manager.stopUpdatingLocation()
     }
+    
+    /* TableView methods */
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (self.placesArray?.count)!
