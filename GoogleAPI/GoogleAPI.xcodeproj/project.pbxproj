@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		298D3590FA5E50B90C8EF2BF /* Pods_GoogleAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C54B59C7909913DE3535183 /* Pods_GoogleAPI.framework */; };
+		5B2161121DCFB9DF00C09FA1 /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2161111DCFB9DF00C09FA1 /* PlaceDetailViewController.swift */; };
+		5B2161141DCFBC4D00C09FA1 /* PlaceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2161131DCFBC4D00C09FA1 /* PlaceUtils.swift */; };
 		5B6B0C0B1DCDFE790070B875 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B0C0A1DCDFE790070B875 /* Place.swift */; };
 		5B6B0C101DCDFF9D0070B875 /* PlaceConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B0C0F1DCDFF9D0070B875 /* PlaceConverter.swift */; };
 		5B6B0C121DCE0EE60070B875 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B0C111DCE0EE60070B875 /* PlacesTableViewController.swift */; };
 		5B6B0C141DCE1F280070B875 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B0C131DCE1F280070B875 /* PlacesTableViewCell.swift */; };
 		5B7862F41DCE345000739E72 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7862F31DCE345000739E72 /* CoreLocation.framework */; };
+		5B84860F1DCFA3F50027091F /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84860E1DCFA3F50027091F /* OpeningHours.swift */; };
 		5BB5DF561DCB6C81009CD58F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5DF551DCB6C81009CD58F /* AppDelegate.swift */; };
 		5BB5DF5B1DCB6C81009CD58F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB5DF591DCB6C81009CD58F /* Main.storyboard */; };
 		5BB5DF5D1DCB6C81009CD58F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB5DF5C1DCB6C81009CD58F /* Assets.xcassets */; };
@@ -42,11 +45,14 @@
 
 /* Begin PBXFileReference section */
 		2C54B59C7909913DE3535183 /* Pods_GoogleAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B2161111DCFB9DF00C09FA1 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
+		5B2161131DCFBC4D00C09FA1 /* PlaceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceUtils.swift; sourceTree = "<group>"; };
 		5B6B0C0A1DCDFE790070B875 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		5B6B0C0F1DCDFF9D0070B875 /* PlaceConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceConverter.swift; sourceTree = "<group>"; };
 		5B6B0C111DCE0EE60070B875 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		5B6B0C131DCE1F280070B875 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
 		5B7862F31DCE345000739E72 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5B84860E1DCFA3F50027091F /* OpeningHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningHours.swift; sourceTree = "<group>"; };
 		5BB5DF521DCB6C81009CD58F /* GoogleAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB5DF551DCB6C81009CD58F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BB5DF5A1DCB6C81009CD58F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 			children = (
 				5B6B0C0E1DCDFF860070B875 /* Converter */,
 				5B6B0C0A1DCDFE790070B875 /* Place.swift */,
+				5B84860E1DCFA3F50027091F /* OpeningHours.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -186,6 +193,8 @@
 			children = (
 				5B6B0C111DCE0EE60070B875 /* PlacesTableViewController.swift */,
 				5B6B0C131DCE1F280070B875 /* PlacesTableViewCell.swift */,
+				5B2161111DCFB9DF00C09FA1 /* PlaceDetailViewController.swift */,
+				5B2161131DCFBC4D00C09FA1 /* PlaceUtils.swift */,
 			);
 			path = Frontend;
 			sourceTree = "<group>";
@@ -396,13 +405,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2161121DCFB9DF00C09FA1 /* PlaceDetailViewController.swift in Sources */,
 				5BB5DF861DCC05EB009CD58F /* API.swift in Sources */,
 				5BB5DF561DCB6C81009CD58F /* AppDelegate.swift in Sources */,
 				5B6B0C141DCE1F280070B875 /* PlacesTableViewCell.swift in Sources */,
 				5BB5DF881DCC10A8009CD58F /* GoogleAPIController.swift in Sources */,
 				5B6B0C101DCDFF9D0070B875 /* PlaceConverter.swift in Sources */,
 				5B6B0C0B1DCDFE790070B875 /* Place.swift in Sources */,
+				5B84860F1DCFA3F50027091F /* OpeningHours.swift in Sources */,
 				5B6B0C121DCE0EE60070B875 /* PlacesTableViewController.swift in Sources */,
+				5B2161141DCFBC4D00C09FA1 /* PlaceUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

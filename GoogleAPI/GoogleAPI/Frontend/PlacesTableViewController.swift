@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import Kingfisher
 
 class PlacesTableViewController: UITableViewController, CLLocationManagerDelegate {
     
@@ -18,6 +19,7 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
         super.viewDidLoad()
         self.placesArray = NSMutableArray()
         self.getLocation()
+        self.title = "Places"
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,8 +39,8 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
     
     func loadPlaces(lat: Double, lon: Double) {
         let googleAPIController = GoogleAPIController()
-        googleAPIController.getGooglePlaces { (placesArray, statusCode) in
-            self.placesArray = placesArray;
+        googleAPIController.getGooglePlaces(lat: lat, lon: lon) { (placesArray, statusCode) in
+            self.placesArray = placesArray
             self.tableView.reloadData()
         }
     }
@@ -57,6 +59,9 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
         
         if let place = self.placesArray?[indexPath.row] as? Place {
             cell.lblPlaceName.text = place.name
+            cell.lblPlaceVicinity.text = place.vicinity
+            let imageURL = URL(string: (place.icon)!)
+            cell.imgPlace.kf.setImage(with: imageURL)
         }
         return cell
     }

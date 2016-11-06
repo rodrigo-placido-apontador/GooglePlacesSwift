@@ -7,10 +7,12 @@ target 'GoogleAPI' do
     use_frameworks!
     pod 'Alamofire', '~> 4.0'
     pod 'Unbox'
+    pod 'SVProgressHUD'
+    pod 'Kingfisher', '~> 3.0'
 end
 
 target 'GoogleAPITests' do
-
+    
 end
 
 target 'GoogleAPIUITests' do

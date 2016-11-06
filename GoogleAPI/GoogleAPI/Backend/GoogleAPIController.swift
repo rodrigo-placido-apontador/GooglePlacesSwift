@@ -13,8 +13,8 @@ class GoogleAPIController {
    
     let api = API()
     
-    func getGooglePlaces(completionHandler: @escaping (NSMutableArray?, Int?) -> ()) -> () {
-        let googleAPIUrl = api.getUrlGoogleAPI(lat: -23.2, lon: -45.3, radius: 5000)
+    func getGooglePlaces(lat: Double, lon: Double, completionHandler: @escaping (NSMutableArray?, Int?) -> ()) -> () {
+        let googleAPIUrl = api.getUrlGoogleAPI(lat: lat, lon: lon, radius: 5000)
         Alamofire.request(googleAPIUrl).responseJSON { response in
             let statusCode: Int
             statusCode = (response.response?.statusCode)!

@@ -12,8 +12,14 @@ import Unbox
 class Place: Unboxable{
   
     var name: String?
+    var openingHours: OpeningHours?
+    var icon: String?
+    var vicinity: String?
     
     required init(unboxer: Unboxer) {
         self.name = unboxer.unbox(key: "name")
+        self.openingHours = unboxer.unbox(key: "opening_hours")
+        self.icon = unboxer.unbox(key: "icon")
+        self.vicinity = unboxer.unbox(key: "vicinity")
     }
 }

@@ -85,9 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-GoogleAPI/Alamofire.framework"
+  install_framework "Pods-GoogleAPI/Kingfisher.framework"
+  install_framework "Pods-GoogleAPI/SVProgressHUD.framework"
   install_framework "Pods-GoogleAPI/Unbox.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-GoogleAPI/Alamofire.framework"
+  install_framework "Pods-GoogleAPI/Kingfisher.framework"
+  install_framework "Pods-GoogleAPI/SVProgressHUD.framework"
   install_framework "Pods-GoogleAPI/Unbox.framework"
 fi

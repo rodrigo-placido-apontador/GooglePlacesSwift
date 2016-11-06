@@ -11,5 +11,7 @@ import UIKit
 class PlacesTableViewCell: UITableViewCell {
    
     @IBOutlet weak var lblPlaceName: UILabel!
+    @IBOutlet weak var lblPlaceVicinity: UILabel!
+    @IBOutlet weak var imgPlace: UIImageView!
     
 }
