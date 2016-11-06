@@ -15,6 +15,7 @@
 		5B6B0C121DCE0EE60070B875 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B0C111DCE0EE60070B875 /* PlacesTableViewController.swift */; };
 		5B6B0C141DCE1F280070B875 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B0C131DCE1F280070B875 /* PlacesTableViewCell.swift */; };
 		5B71AE941DCFC7D2003392C7 /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B71AE931DCFC7D2003392C7 /* ErrorHelper.swift */; };
+		5B71AE9B1DCFCBBE003392C7 /* place.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B71AE9A1DCFCBBE003392C7 /* place.json */; };
 		5B7862F41DCE345000739E72 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7862F31DCE345000739E72 /* CoreLocation.framework */; };
 		5B84860F1DCFA3F50027091F /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84860E1DCFA3F50027091F /* OpeningHours.swift */; };
 		5BB5DF561DCB6C81009CD58F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5DF551DCB6C81009CD58F /* AppDelegate.swift */; };
@@ -53,6 +54,7 @@
 		5B6B0C111DCE0EE60070B875 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		5B6B0C131DCE1F280070B875 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
 		5B71AE931DCFC7D2003392C7 /* ErrorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHelper.swift; sourceTree = "<group>"; };
+		5B71AE9A1DCFCBBE003392C7 /* place.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = place.json; sourceTree = "<group>"; };
 		5B7862F31DCE345000739E72 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5B84860E1DCFA3F50027091F /* OpeningHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningHours.swift; sourceTree = "<group>"; };
 		5BB5DF521DCB6C81009CD58F /* GoogleAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +202,7 @@
 				5BB5DF5C1DCB6C81009CD58F /* Assets.xcassets */,
 				5BB5DF5E1DCB6C81009CD58F /* LaunchScreen.storyboard */,
 				5BB5DF611DCB6C81009CD58F /* Info.plist */,
+				5B71AE9A1DCFCBBE003392C7 /* place.json */,
 			);
 			path = GoogleAPI;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				5BB5DF601DCB6C81009CD58F /* LaunchScreen.storyboard in Resources */,
 				5BB5DF5D1DCB6C81009CD58F /* Assets.xcassets in Resources */,
 				5BB5DF5B1DCB6C81009CD58F /* Main.storyboard in Resources */,
+				5B71AE9B1DCFCBBE003392C7 /* place.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

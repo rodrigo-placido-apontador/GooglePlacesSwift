@@ -1,0 +1,160 @@
+{
+    "html_attributions" : [],
+    "results" : [
+                 {
+                 "geometry" : {
+                 "location" : {
+                 "lat" : 37.7869874,
+                 "lng" : -122.4026457
+                 }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "5a5280ed74d3503c849a6ca679125df6cadb9bfd",
+                 "name" : "The Bay Detail",
+                 "opening_hours" : {
+                 "open_now" : true,
+                 "weekday_text" : []
+                 },
+                 "photos" : [
+                             {
+                             "height" : 480,
+                             "html_attributions" : [
+                                                    "\u003ca href=\"https://maps.google.com/maps/contrib/100671586926491414372/photos\"\u003eThe Bay Detail\u003c/a\u003e"
+                                                    ],
+                             "photo_reference" : "CoQBcwAAALBPDYEygLGHidNGu-WzPzt7xVM5nQDu9jyxKUPVsQJhHfOzjjUDLN8ILTa_EUn2V5WEzA9sxHVbW6H9GvzbCDOtUx6ymsOqZTxj2egAsbO-j0moPPmnfNiDBNg4zqYYSvF0ug2mtMmqT2s5zoKkQgEg8Ph8Pu8heFSP3mL8dkp5EhARofFlzZuQ1-7mG5-jtWk_GhQN19AkA-Yel8q7J7dhgtaD9hdS2g",
+                             "width" : 640
+                             }
+                             ],
+                 "place_id" : "ChIJBzukc4iAhYARnQ743IUcAfc",
+                 "reference" : "CmRSAAAA4LckGXA_AuQSQGRViIKP8SgQsyB9MV3NOxgWXIzpXTBsACNpYXuhyjwt9_FQktlSVv48iy0cTLayDp25NlEBtmF-4JoJeLnIwk4hgBmHlxkkZhx8QD7RBfiZAcBItdNSEhDYc0YoB0uixr9dTPht5Mq1GhSRmRzw4xL_ZPAAhqW1H6hmdZlqfA",
+                 "scope" : "GOOGLE",
+                 "types" : [ "car_wash", "car_repair", "point_of_interest", "establishment" ],
+                 "vicinity" : "45 3rd St, San Francisco"
+                 },
+                 {
+                 "geometry" : {
+                 "location" : {
+                 "lat" : 37.7879384,
+                 "lng" : -122.4075056
+                 },
+                 "viewport" : {
+                 "northeast" : {
+                 "lat" : 37.78870910000001,
+                 "lng" : -122.4070412
+                 },
+                 "southwest" : {
+                 "lat" : 37.78768150000001,
+                 "lng" : -122.4076604
+                 }
+                 }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/atm-71.png",
+                 "id" : "7bdfcace3e25e0ed9872a1d8810c8d93186a7666",
+                 "name" : "Cardtronics ATM",
+                 "place_id" : "ChIJCx8KComAhYARtDTKTVis0-8",
+                 "reference" : "CmRSAAAAClIa1Hk75IUULyqtRoSD9wMLz1sDDlFhh9o5EH8HT3aQ_37BXNLKj0SmlSdO4p_PqolpJTvuwJpGBp0GEjN3jm6m__kQ3j9z3mG1yqeMa1XA4dutZ_Pw60hjjYr2JJhDEhBQAJ-M3CPyhFfjEeyRp9_UGhT4UyEUnkMNjEHHAE24gbJusHC90A",
+                 "scope" : "GOOGLE",
+                 "types" : [ "atm", "finance", "car_repair", "point_of_interest", "establishment" ],
+                 "vicinity" : "333 Post Street, San Francisco"
+                 },
+                 {
+                 "geometry" : {
+                 "location" : {
+                 "lat" : 37.7876523,
+                 "lng" : -122.4103043
+                 },
+                 "viewport" : {
+                 "northeast" : {
+                 "lat" : 37.78771185,
+                 "lng" : -122.40982925
+                 },
+                 "southwest" : {
+                 "lat" : 37.78763245,
+                 "lng" : -122.41046265
+                 }
+                 }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "820e4ae9df8f1fd573a7535c8e0196d80273b483",
+                 "name" : "Evans Auto & Truck",
+                 "place_id" : "ChIJyXRMWY6AhYARVQkQyCLEIWk",
+                 "reference" : "CmRRAAAAoVtRuGrub2U8XFR8vgg-v6JQAVadOIjnf-mTux530bC0NiWGGpfCsGrvvRShDJ4hnlJOYe3ZyxiQRD64o6yg-gae1hpNg5hLrleoFWvKtR75GPchfAByP7ByoF_yvFroEhAqeirSFVt5dz0ehrexYM9WGhRqX1bNrskipl0H3_PtAr5oEtl2aw",
+                 "scope" : "GOOGLE",
+                 "types" : [ "car_repair", "point_of_interest", "establishment" ],
+                 "vicinity" : "433 Mason Street, San Francisco"
+                 },
+                 {
+                 "geometry" : {
+                 "location" : {
+                 "lat" : 37.7877173,
+                 "lng" : -122.405972
+                 },
+                 "viewport" : {
+                 "northeast" : {
+                 "lat" : 37.78775284999999,
+                 "lng" : -122.40589825
+                 },
+                 "southwest" : {
+                 "lat" : 37.78761065,
+                 "lng" : -122.40619325
+                 }
+                 }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "5cc97013acd7d86b5c183e8bde2445eca6a530a7",
+                 "name" : "Gary's Glass Store",
+                 "opening_hours" : {
+                 "open_now" : true,
+                 "weekday_text" : []
+                 },
+                 "place_id" : "ChIJWwjc24iAhYARKzII8ZG471g",
+                 "reference" : "CmRRAAAAuiT-1IQOzdhTmuGmiS2FDEMavmpKeKQECk4hRKCF0UgiUeYL-azgErf8KAHxhC7iyb6fhYUWx8YAubEmAXXSa-VwLQL7qyojlaKN60HB8-ERZAG-Iyljq7sO_QxYJTcMEhDeSapzT-d-RUbWN31FPCaaGhSSfe6D9JOAQq4eiEZcW_XrvUX7_Q",
+                 "scope" : "GOOGLE",
+                 "types" : [ "car_repair", "point_of_interest", "establishment" ],
+                 "vicinity" : "Geary Street, San Francisco"
+                 },
+                 {
+                 "geometry" : {
+                 "location" : {
+                 "lat" : 37.7861966,
+                 "lng" : -122.4022459
+                 }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+                 "id" : "bba33e9d9404d9d9d2c5bbbde73c4d3371dc08a2",
+                 "name" : "B & B Transmissions",
+                 "place_id" : "ChIJFwu78YeAhYAR3f1DHJze6_g",
+                 "reference" : "CmRSAAAAdVbGe4GX2LsEK5SDwvC5ATA0-P0YIfLcf46Xs5dYjqP9pwY1bddrm-c2i778-f3uRSdOCNAvonBiG5ZYkJvLNV2-GAY5kzn5sy2MLxifg-TTA4_aMnwzYJKNk3G5widGEhBTuTkahKe2Jgr4BsuH6cAfGhTAzX4yxr0wi_YFlQrpJR0Yed2C6A",
+                 "scope" : "GOOGLE",
+                 "types" : [ "car_repair", "point_of_interest", "establishment" ],
+                 "vicinity" : "703 Mission Street, San Francisco"
+                 },
+                 {
+                 "geometry" : {
+                 "location" : {
+                 "lat" : 37.78915979999999,
+                 "lng" : -122.4100128
+                 },
+                 "viewport" : {
+                 "northeast" : {
+                 "lat" : 37.78920859999999,
+                 "lng" : -122.41000195
+                 },
+                 "southwest" : {
+                 "lat" : 37.78901339999999,
+                 "lng" : -122.41004535
+                 }
+                 }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+                 "id" : "f619461c4b020f394ee1c516b7fad4d0f802867c",
+                 "name" : "Lockmasters US",
+                 "place_id" : "ChIJG9JIfo6AhYARRbdhnWexlvo",
+                 "reference" : "CmRSAAAAXRs0NQlRYGN1kaBj8uAIC4B-pblMezzB3LHGpXCjYIC3XbFeoU9R_t4Lzt6tg6a--CwAkpAzUUnEhSGDQLF4ljBlchj9FSOZK5NTSDJD62d9jPCXcqPC0HJxtcBhXYYAEhCDDMWRlHdt8Ry_lf67qUDcGhT121Qr22ue7FTEmxXI151UhluGHw",
+                 "scope" : "GOOGLE",
+                 "types" : [ "car_repair", "store", "point_of_interest", "establishment" ],
+                 "vicinity" : "588 Sutter Street, San Francisco"
+                 }
+                 ],
+    "status" : "OK"
+}
