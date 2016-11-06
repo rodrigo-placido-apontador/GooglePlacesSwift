@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="-6" y="20"/>
         </scene>
-        <!--View Controller-->
+        <!--Place Detail View Controller-->
         <scene sceneID="jeM-d9-ziK">
             <objects>
-                <viewController id="Jtf-P8-th6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlaceDetailViewController" id="Jtf-P8-th6" customClass="PlaceDetailViewController" customModule="GoogleAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n88-kN-vpH"/>
                         <viewControllerLayoutGuide type="bottom" id="kbB-Bw-x8J"/>
@@ -153,6 +153,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="sHV-gI-FiS" secondAttribute="trailing" id="rfO-8N-B2j"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgIcon" destination="gxx-uD-PCr" id="U8L-hD-gkc"/>
+                        <outlet property="lblName" destination="sHV-gI-FiS" id="h8i-Tt-PmH"/>
+                        <outlet property="lblOpenNow" destination="ms9-FU-xGo" id="XyJ-12-jFx"/>
+                        <outlet property="lblPlaceVicinity" destination="wmW-TV-B3Q" id="W2o-FG-bL3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qaw-l2-ogH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

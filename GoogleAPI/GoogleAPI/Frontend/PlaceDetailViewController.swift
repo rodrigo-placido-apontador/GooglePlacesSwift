@@ -29,9 +29,12 @@ class PlaceDetailViewController: UIViewController {
     }
     
     func loadPlace() {
+        let placeUtils = PlaceUtils()
+        
         self.lblName.text = place?.name
         self.lblPlaceVicinity.text = place?.vicinity
-        self.lblOpenNow.text = "Aberto"
+        self.lblOpenNow.text = placeUtils.getOpenNowString(openNow: (place?.openingHours?.openNow)!)
+        self.lblOpenNow.textColor = placeUtils.getOpenNowColor(openNow: (place?.openingHours?.openNow)!)
         let imageURL = URL(string: (place?.icon)!)
         self.imgIcon.kf.setImage(with: imageURL)
     }

@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 import Kingfisher
+import SVProgressHUD
 
 class PlacesTableViewController: UITableViewController, CLLocationManagerDelegate {
     
@@ -20,6 +21,14 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
         self.placesArray = NSMutableArray()
         self.getLocation()
         self.title = "Places"
+        
+        /* PULL TO REFRESH */
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl?.addTarget(self, action: #selector(PlacesTableViewController.reloadPlaces), for: UIControlEvents.valueChanged)
+        self.tableView.addSubview(refreshControl!)
+        
+        /* Remove extra separator */
+        self.tableView.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,11 +36,19 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
         // Dispose of any resources that can be recreated.
     }
     
+    func reloadPlaces() {
+        self.refreshControl?.endRefreshing()
+        self.placesArray?.removeAllObjects()
+        self.tableView?.reloadData()
+        self.getLocation()
+    }
+    
     func getLocation() {
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
+            SVProgressHUD.show(withStatus: "Loading Places")
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
@@ -40,14 +57,21 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
     func loadPlaces(lat: Double, lon: Double) {
         let googleAPIController = GoogleAPIController()
         googleAPIController.getGooglePlaces(lat: lat, lon: lon) { (placesArray, statusCode) in
-            self.placesArray = placesArray
-            self.tableView.reloadData()
+            if statusCode == 200 {
+                SVProgressHUD.showSuccess(withStatus: "Places Loaded")
+                self.placesArray = placesArray
+                self.tableView.reloadData()
+            } else {
+                let errorHelper = ErrorHelper()
+                SVProgressHUD.showError(withStatus: errorHelper.getErrorMessage(statusCode: statusCode!))
+            }
         }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let coordinate:CLLocationCoordinate2D = manager.location!.coordinate
         self.loadPlaces(lat: coordinate.latitude, lon: coordinate.longitude)
+        manager.stopUpdatingLocation()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -65,4 +89,13 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
         }
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "PlaceDetailViewController") as! PlaceDetailViewController
+        vc.place = self.placesArray?[indexPath.row] as? Place
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
 }

@@ -8,6 +8,13 @@
 
 import UIKit
 
-class PlaceUtils: NSObject {
-
+class PlaceUtils {
+    
+    func getOpenNowString(openNow: String) -> String {
+        return (openNow == "0") ? "Fechado" : "Aberto"
+    }
+    
+    func getOpenNowColor(openNow: String) -> UIColor {
+        return (openNow == "0") ? UIColor.red : UIColor.green
+    }
 }
